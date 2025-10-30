@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CriaTech — Sites, Sistemas & Design</title>
+  <meta name="description" content="CriaTech - Desenvolvimento web, sistemas e design. Vitor Guilherme & Lucas Moreira" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-slate-900 via-slate-800 to-black text-slate-100 antialiased">
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="logo.png" alt="CriaTech logo" class="w-14 h-14 rounded-2xl bg-white/5 p-2" />
+      <div>
+        <div class="font-bold text-xl">CriaTech</div>
+        <div class="text-slate-400 text-sm">Sites • Sistemas • Design</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 items-center text-sm">
+      <a href="#services" class="hover:underline">Serviços</a>
+      <a href="#portfolio" class="hover:underline">Portfólio</a>
+      <a href="#team" class="hover:underline">Time</a>
+      <a href="#contact" class="hover:underline">Contato</a>
+      <a href="https://www.instagram.com/cria.tech_/?hl=en" target="_blank" class="px-4 py-2 rounded-lg bg-amber-400 text-black font-medium">Instagram</a>
+    </nav>
+    <div class="md:hidden">
+      <a href="#contact" class="px-3 py-2 rounded-lg bg-emerald-500 text-black text-sm">Contato</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Hero / Carousel -->
+    <section class="relative rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-2/3 p-6">
+          <div id="carousel" class="h-80 md:h-96 rounded-xl overflow-hidden relative bg-black/40 border border-white/5">
+            <!-- slides -->
+            <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-700 opacity-100" data-index="0">
+              <div class="w-full h-full relative">
+                <iframe class="proj-frame" src="https://newksitesfss.github.io/barber/" title="BarberPlay"></iframe>
+                <div class="absolute left-6 bottom-6 bg-gradient-to-r from-indigo-600 to-pink-500 px-4 py-2 rounded-lg text-black font-semibold">Prime barber barber — Site para Barbearia</div>
+              </div>
+            </div>
+            <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-700 opacity-0" data-index="1">
+              <div class="w-full h-full relative">
+                <iframe class="proj-frame" src="https://newksitesfss.github.io/portifolio/" title="Ultra Cel"></iframe>
+                <div class="absolute left-6 bottom-6 bg-gradient-to-r from-emerald-400 to-cyan-400 px-4 py-2 rounded-lg text-black font-semibold">Ultra Cel — Loja e Assistência</div>
+              </div>
+            </div>
+            <div class="slide absolute inset-0 flex items-center justify-center transition-opacity duration-700 opacity-0" data-index="2">
+              <div class="w-full h-full flex items-center justify-center">
+                <div class="text-center px-6">
+                  <h2 class="text-3xl md:text-4xl font-extrabold">CriaTech — Sites, Sistemas & Design</h2>
+                  <p class="mt-2 text-slate-300">Entrega completa: do design ao sistema.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- controls -->
+            <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/6 hover:bg-white/10">‹</button>
+            <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/6 hover:bg-white/10">›</button>
+            <div id="indicators" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3"></div>
+          </div>
+        </div>
+
+        <aside class="md:w-1/3 p-6 flex flex-col gap-6 justify-center bg-gradient-to-b from-transparent to-black/60">
+          <div>
+            <h1 class="text-3xl md:text-4xl font-extrabold">CriaTech</h1>
+            <p class="mt-2 text-slate-300">Sites, sistemas e design feitos sob medida. Vamos transformar sua presença digital.</p>
+          </div>
+
+          <div class="flex gap-3">
+            <a href="https://wa.me/5581996744143?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+com+a+CriaTech" class="flex-1 px-4 py-3 rounded-lg bg-emerald-500 text-black font-semibold text-center shadow-lg transform hover:-translate-y-1 transition">Vamos conversar</a>
+            <a href="tel:+5581996744143" class="px-4 py-3 rounded-lg border border-white/10 text-sm flex items-center gap-2">📞 81 99674-4143</a>
+          </div>
+
+          <div class="text-xs text-slate-400">Desenvolvedores: <strong>Vitor Guilherme</strong> &amp; <strong>Lucas Moreira</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl glass border border-white/5 hover:scale-[1.02] transition">
+        <h3 class="font-semibold text-lg">Sites Profissionais</h3>
+        <p class="mt-2 text-slate-300 text-sm">Design responsivo, SEO inicial, velocidade e CMS se necessário.</p>
+        <ul class="mt-3 text-sm text-slate-400 list-disc list-inside">
+          <li>Landing pages</li>
+          <li>Portfólios</li>
+          <li>E-commerces</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-xl glass border border-white/5 hover:scale-[1.02] transition">
+        <h3 class="font-semibold text-lg">Sistemas & Dashboards</h3>
+        <p class="mt-2 text-slate-300 text-sm">Aplicações sob medida: gestão, agendamento, CRMs e integrações com APIs.</p>
+        <ul class="mt-3 text-sm text-slate-400 list-disc list-inside">
+          <li>gerenciamento de lojas</li>
+          <li>chatbots</li>
+          <li>Relatórios</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-xl glass border border-white/5 hover:scale-[1.02] transition">
+        <h3 class="font-semibold text-lg">Design & Brand</h3>
+        <p class="mt-2 text-slate-300 text-sm">Identidade visual, UX/UI e prototipação para maximizar conversões.</p>
+        <ul class="mt-3 text-sm text-slate-400 list-disc list-inside">
+          <li>Logo & Brand</li>
+          <li>Design de Produto</li>
+          <li>Prototipação rápida</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio grid -->
+    <section id="portfolio" class="mt-12">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Portfólio — Destaques</h2>
+        <a href="https://newksitesfss.github.io/portifolio/" target="_blank" class="text-sm text-slate-400 hover:underline">Ver todos</a>
+      </div>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <a href="https://newksitesfss.github.io/barber/" target="_blank" class="block rounded-xl overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 border border-white/5 hover:scale-[1.02] transition">
+          <div class="h-44 md:h-56 bg-black/60 flex items-center justify-center">
+            <iframe title="Barbearia preview" src="https://newksitesfss.github.io/barber/" class="w-full h-full border-0"></iframe>
+          </div>
+          <div class="p-4">
+            <div class="font-semibold">Prime barber</div>
+            <div class="text-sm text-slate-400 mt-1">Site com foco em reservas e visual forte.</div>
+          </div>
+        </a>
+        <a href="https://newksitesfss.github.io/ultra-cell/" target="_blank" class="block rounded-xl overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 border border-white/5 hover:scale-[1.02] transition">
+          <div class="h-44 md:h-56 bg-black/60 flex items-center justify-center">
+            <iframe title="Ultra Cel preview" src="https://newksitesfss.github.io/ultra-cell/" class="w-full h-full border-0"></iframe>
+          </div>
+          <div class="p-4">
+            <div class="font-semibold">Ultra Cel</div>
+            <div class="text-sm text-slate-400 mt-1">Loja e sistema de suporte para assistência técnica.</div>
+          </div>
+        </a>
+        <div class="block rounded-xl overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 border border-white/5 p-6 hover:scale-[1.02] transition">
+          <div class="font-semibold">Seu próximo projeto</div>
+          <p class="text-sm text-slate-400 mt-2">Quer ver seu negócio aqui? Vamos conversar — entregamos design e sistema completos.</p>
+          <div class="mt-4">
+            <a href="#contact" class="inline-block px-4 py-2 rounded-lg bg-indigo-600 text-black font-semibold">Quero um site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="mt-12 bg-slate-900/40 p-6 rounded-xl">
+      <h3 class="text-xl font-bold">Time</h3>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold">V</div>
+          <div>
+            <div class="font-semibold">Vitor Guilherme</div>
+            <div class="text-sm text-slate-400">Full-stack developer & UI</div>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center font-bold">L</div>
+          <div>
+            <div class="font-semibold">Lucas Moreira</div>
+            <div class="text-sm text-slate-400">Full-stack & designer pro</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 p-6 rounded-xl bg-gradient-to-b from-slate-900 to-black border border-white/5">
+      <div class="md:flex md:items-center md:justify-between">
+        <div>
+          <h3 class="text-2xl font-bold">Fale com a CriaTech</h3>
+          <p class="mt-2 text-slate-300">Whatsapp, Instagram ou e-mail — responda em poucas horas durante dias úteis.</p>
+          <div class="mt-4 flex flex-col md:flex-row gap-3">
+            <a href="https://www.instagram.com/cria.tech_/?hl=en" target="_blank" class="px-4 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-yellow-400 text-black font-semibold">@cria.tech_</a>
+            <a href="https://wa.me/5581996744143?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+com+a+CriaTech" target="_blank" class="px-4 py-3 rounded-lg bg-green-500 text-black font-semibold flex items-center gap-3">💬 WhatsApp — (81) 99674-4143</a>
+          </div>
+        </div>
+        <form class="mt-6 md:mt-0 md:w-1/2 bg-slate-800/20 p-4 rounded-lg border border-white/5" onsubmit="submitForm(event)">
+          <div class="grid gap-3">
+            <input id="name" placeholder="Nome" class="bg-transparent border border-white/6 rounded-md px-3 py-2" required />
+            <input id="email" placeholder="E-mail" type="email" class="bg-transparent border border-white/6 rounded-md px-3 py-2" required />
+            <textarea id="message" placeholder="Mensagem" rows="4" class="bg-transparent border border-white/6 rounded-md px-3 py-2" required></textarea>
+            <div class="flex gap-3">
+              <button type="submit" class="flex-1 px-4 py-2 rounded-md bg-indigo-600 text-black font-semibold">Enviar mensagem</button>
+              <a href="tel:+5581996744143" class="px-4 py-2 rounded-md border border-white/6">Ligar</a>
+            </div>
+            <div id="formStatus" class="text-sm text-slate-300"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-12 py-8 text-center text-slate-400 text-sm">© {YEAR} CriaTech — Sites, sistemas & design • Desenvolvedores: Vitor Guilherme & Lucas Moreira</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
