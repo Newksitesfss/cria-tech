@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CriaTech — Sites, Sistemas & Design</title>
   <meta name="description" content="CriaTech - Desenvolvimento web, sistemas e design. Vitor Guilherme & Lucas Moreira" />
+   <link rel="icon" href="logoIcon.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0049ff] text-slate-100 antialiased">
+<body class="bg-[#00008B] text-slate-100 antialiased">
   <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
     <div class="flex items-center gap-4">
       <img src="logo.png" alt="CriaTech logo" class="w-14 h-14 rounded-2xl bg-white/5 p-2" />
@@ -146,26 +147,51 @@
       </div>
     </section>
 
-    <!-- Team -->
-    <section id="team" class="mt-12 bg-slate-900/40 p-6 rounded-xl">
-      <h3 class="text-xl font-bold">Time</h3>
-      <div class="mt-4 grid md:grid-cols-2 gap-6">
-        <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
-          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold">V</div>
-          <div>
-            <div class="font-semibold">Vitor Guilherme</div>
-            <div class="text-sm text-slate-400">Full-stack developer & UI</div>
-          </div>
-        </div>
-        <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
-          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center font-bold">L</div>
-          <div>
-            <div class="font-semibold">Lucas Moreira</div>
-            <div class="text-sm text-slate-400">Full-stack & designer pro</div>
-          </div>
-        </div>
+<!-- Team -->
+<section id="team" class="mt-12 bg-slate-900/40 p-6 rounded-xl">
+  <h3 class="text-xl font-bold">Time</h3>
+  <div class="mt-4 grid md:grid-cols-2 gap-6">
+
+    <!-- Membro 1 (Vitor Guilherme) -->
+    <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
+      <div class="relative w-20 h-20 shrink-0">
+        <!-- Borda azul animada -->
+        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#0049ff] via-[#2d6dff] to-[#66a3ff] animate-spin-slow"></div>
+        <!-- Imagem do Vitor -->
+        <img
+          src="vitor.png"
+          alt="Foto de Vitor Guilherme"
+          class="absolute inset-[3px] rounded-full w-[calc(100%-6px)] h-[calc(100%-6px)] object-cover object-center"
+        />
       </div>
-    </section>
+      <div>
+        <div class="font-semibold">Vitor Guilherme</div>
+        <div class="text-sm text-slate-400">Full-stack Developer & UI Designer</div>
+      </div>
+    </div>
+
+    <!-- Membro 2 (Lucas Moreira) -->
+    <div class="p-4 rounded-xl bg-gradient-to-b from-slate-800/40 to-transparent border border-white/5 flex gap-4 items-center">
+      <div class="relative w-20 h-20 shrink-0">
+        <!-- Borda azul igual à do Vitor -->
+        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#0049ff] via-[#2d6dff] to-[#66a3ff] animate-spin-slow"></div>
+        <!-- Imagem do Lucas -->
+        <img
+          src="lucas.png"
+          alt="Foto de Lucas Moreira"
+          class="absolute inset-[3px] rounded-full w-[calc(100%-6px)] h-[calc(100%-6px)] object-cover object-center"
+        />
+      </div>
+      <div>
+        <div class="font-semibold">Lucas Moreira</div>
+        <div class="text-sm text-slate-400">Full-stack & Designer Pro</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- Contact -->
     <section id="contact" class="mt-12 p-6 rounded-xl bg-gradient-to-b from-slate-900 to-black border border-white/5">
@@ -193,7 +219,7 @@
       </div>
     </section>
 
-    <footer class="mt-12 py-8 text-center text-slate-400 text-sm">© {YEAR} CriaTech — Sites, sistemas & design • Desenvolvedores: Vitor Guilherme & Lucas Moreira</footer>
+    <footer class="mt-12 py-8 text-center text-slate-400 text-sm">© CriaTech — Sites, sistemas & design • Desenvolvedores: Vitor Guilherme & Lucas Moreira</footer>
   </main>
 
   <script src="script.js"></script>
